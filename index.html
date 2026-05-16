@@ -55,6 +55,15 @@ footer{background:var(--bg-dark);border-top:1px solid #1E293B;padding:40px 24px}
 .f-bt{max-width:1100px;margin:24px auto 0;padding-top:24px;border-top:1px solid #1E293B;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .f-bt p,.f-bt a{font-size:12px;color:#475569;text-decoration:none}
 .f-bt a:hover{color:#94A3B8}
+.sms-cta{background:linear-gradient(135deg,rgba(16,185,129,0.06),rgba(59,130,246,0.04));border-top:1px solid var(--border);border-bottom:1px solid var(--border);text-align:center}
+.sms-cta .cta-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:32px 28px;max-width:560px;margin:0 auto;box-shadow:0 4px 24px rgba(16,185,129,0.06)}
+.sms-cta .cta-number{display:inline-flex;align-items:center;gap:10px;padding:18px 28px;background:var(--text);color:#fff;border-radius:10px;font-family:'IBM Plex Mono',monospace;font-size:18px;font-weight:600;letter-spacing:0.5px;text-decoration:none;margin:8px 0 16px;transition:background 0.2s}
+.sms-cta .cta-number:hover{background:#000}
+.sms-cta .disclosure{font-size:12px;color:var(--dim);line-height:1.6;margin-top:8px}
+.sms-cta .disclosure a{color:var(--green-d);text-decoration:underline}
+.contact-card{background:var(--card);border:1px solid #1E293B;border-radius:14px;padding:20px 24px;margin-top:20px;text-align:left;font-size:14px;line-height:1.9}
+.contact-card a{color:var(--green);text-decoration:none}
+.contact-card a:hover{text-decoration:underline}
 .lp{padding:100px 24px 80px;max-width:800px;margin:0 auto;display:none}
 .lp.active{display:block}
 .lp h1{font-size:32px;font-weight:800;margin-bottom:8px}
@@ -90,6 +99,15 @@ footer{background:var(--bg-dark);border-top:1px solid #1E293B;padding:40px 24px}
 <p>AstridAgent AI builds smart automation tools that help service businesses book more jobs, save time, and grow — all powered by artificial intelligence.</p>
 <a href="mailto:dan@astridagent.ai" class="cta">Get in Touch &rarr;</a>
 </section>
+<section class="sec sms-cta" id="try-ziggy">
+<div class="cta-card">
+<div class="sec-l" style="text-align:center;justify-content:center">See Ziggy in action</div>
+<h2 style="text-align:center">Try the AI on a real phone number</h2>
+<p style="margin:0 auto 8px;max-width:480px">Want to feel how an AI SMS back office works? Text <strong>DEMO</strong> to <strong>(941) 422-6811</strong>. You&rsquo;ll be chatting with Ziggy in seconds &mdash; no signup, no commitment.</p>
+<a href="sms:+19414226811?body=DEMO" class="cta-number">&#128241; (941) 422-6811</a>
+<p class="disclosure">Message frequency varies by how often you interact with us &mdash; typically 0&ndash;5 messages per demo. Message and data rates may apply. Reply <strong>STOP</strong> to opt out, <strong>HELP</strong> for help. See <a href="/sms-consent.html">SMS Messaging Policy</a> for details.</p>
+</div>
+</section>
 <section class="sec" id="products">
 <div class="sec-l">Our Products</div>
 <h2>Built for Businesses That Work with Their Hands</h2>
@@ -106,6 +124,15 @@ footer{background:var(--bg-dark);border-top:1px solid #1E293B;padding:40px 24px}
 <p>AstridAgent AI LLC is based in Sarasota, Florida. We're building the next generation of business tools for the trades — the landscapers, detailers, cleaners, and service providers who are too busy doing great work to sit at a computer all day.</p>
 <p>Our mission is simple: give every small service business access to the same AI-powered tools that Fortune 500 companies use — at a price they can afford, through a channel they already use (their phone).</p>
 <p>We believe the future of small business isn't more software to learn — it's an AI partner that handles the business side so you can focus on the work you love.</p>
+<div class="contact-card">
+<strong style="color:#fff">AstridAgent AI LLC</strong><br>
+&#128205; Sarasota, Florida<br>
+&#128241; Demo SMS: <a href="sms:+19414226811?body=DEMO">(941) 422-6811</a> &mdash; text DEMO to chat with Ziggy<br>
+&#9742;&#65039; Customer service voice/text: <a href="tel:+19414226811">(941) 422-6811</a><br>
+&#128231; Email: <a href="mailto:dan@astridagent.ai">dan@astridagent.ai</a><br>
+&#128338; Business hours: Mon&ndash;Fri 9am&ndash;5pm Eastern<br>
+&#127760; Active customers include <a href="https://freshfrontservice.com" target="_blank" rel="noopener">Fresh Front Service</a> (Sarasota, FL &mdash; lawn care &amp; landscaping)
+</div>
 </div></section>
 </div>
 

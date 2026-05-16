@@ -1,0 +1,166 @@
+/* Shared styles for astridagent.ai/{privacy,terms,sms-consent}.html
+   Standalone deep-linkable policy pages — created 2026-05-16 in response
+   to A2P 10DLC campaign rejection 30908 (privacy policy can not be
+   verified). Reviewers couldn't deep-link to the SPA sections at
+   astridagent.ai/#page-privacy etc.; these pages give them real URLs.
+   Uses the same AstridAgent design tokens as index.html (light theme,
+   green accent, Plus Jakarta Sans). */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #FAFBFC;
+  --card: #FFFFFF;
+  --border: #E5E7EB;
+  --text: #111827;
+  --dim: #6B7280;
+  --light: #9CA3AF;
+  --green: #10B981;
+  --green-d: #059669;
+  --green-l: #D1FAE5;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+header.mast {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 36px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #10B981, #3B82F6, #8B5CF6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.wordmark {
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.3px;
+}
+
+.wordmark .accent {
+  color: var(--green);
+}
+
+.mast .home-link {
+  margin-left: auto;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--dim);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.mast .home-link:hover { color: var(--text); }
+
+.eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.updated {
+  font-size: 13px;
+  color: var(--light);
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+p, li {
+  font-size: 15px;
+  color: var(--text);
+  margin-bottom: 12px;
+  line-height: 1.75;
+}
+
+ul {
+  padding-left: 22px;
+  margin-bottom: 16px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: var(--green-d);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--green);
+}
+
+strong {
+  font-weight: 700;
+  color: var(--text);
+}
+
+footer.foot {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+footer.foot a {
+  color: var(--dim);
+  text-decoration: none;
+}
+
+footer.foot a:hover {
+  color: var(--text);
+}
+
+footer.foot .copy {
+  margin-left: auto;
+  color: var(--light);
+}
